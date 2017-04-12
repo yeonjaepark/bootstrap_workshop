@@ -2,119 +2,164 @@
 <html>
 <head>
   <title>CS Survival Guide</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-  <nav>
-    <div>
-      <div>
-        <a href="#">CS Survival Guide</a>
+<style>
+  body {
+    padding-top: 70px;
+  }
+</style>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">CS Survival Guide</a>
+        <button type="button" class="navbar-toggle .icon-bar" data-toggle="collapse" data-target="#menu">
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+        </button>
       </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Favorite Classes</a></li>
-        <li><a href="#">Top Languages</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#guide">CS Guide</a></li>
+          <li><a href="#languages">Top Languages</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp; Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp; Login</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <div class="page_header">
-    <div>
+  <div class="container" id="home">
+    <div class="jumbotron">
       <h1>Dartmouth CS Survival Guide</h1>
-      <p>Welcome to the homepage of the Dartmouth CS Survival Guide – your home
+      <p>Welcome to the homepage of the Dartmouth CS Survival Guide - your home
         for helpful tips, tricks, and stories to help you get through your time
         as a CS major.</p>
+    </div>
+  </div>
+
+  <div class="container" id="guide">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Top 6 Common CS Mistakes to Avoid</h2>
       </div>
     </div>
 
-    <div class="grid_layout">
-      <h2>Top 6 Common CS Mistakes to Avoid</h2>
-      <div>
-        <div>
-          <h3>#1: Segmentation Faults (Core Dumped)</h3>
-        </div>
-        <div>
-          <p>
-            As anyone who has programmed in C knows, working with a language
-            that is not memory safe can be a blessing and a curse.  One
-            negative of low-level access is the segfault, which is caused
-            by a program trying to read or write an illegal memory location.
-            Some students have dubbed recieving this common programming error
-            'Taking a segfault to the face'.
-          </p>
-        </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>#1: Segmentation Faults (Core Dumped)</h3>
       </div>
-      <div>
-        <div>
-          <h3>#2: Procrastination</h3>
-        </div>
-        <div>
-          <p>
-            The only possible thing that makes a CS lab harder is when its
-            due at midnight and it’s 10pm.  Being a CS major and procrastinating
-            is probably a bad combination, like beans and red wine.  Most
-            CS labs are time consuming to say the least, so starting the day
-            they are due is definitely not a good idea.
-          </p>
-        </div>
+      <div class="col-md-8">
+        <p>
+          As anyone who has programmed in C knows, working with a language
+          that is not memory safe can be a blessing and a curse.  One
+          negative of low-level access is the segfault, which is caused
+          by a program trying to read or write an illegal memory location.
+          Some students have dubbed recieving this common programming error
+          'Taking a segfault to the face'.
+        </p>
       </div>
-      <div>
-        <div>
-          <h3>#3: Not Using Git</h3>
-        </div>
-        <div>
-          <p>
-            As a student, especially if no one else is working on your code,
-            using Git can seem tedious and unneccessary.  Why learn this complicated
-            new system and follow a new workflow?  Well, as anyone who has tried
-            and failed at a major change and forgotten to back up their work knows,
-            using Git correctly can be crucial to success.  Proper Git usage can
-            save invaluable time and is a necessary skill for group work.
-          </p>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>#2: Procrastination</h3>
       </div>
-      <div>
-        <div>
-          <h3>#4: Getting Cooked</h3>
-        </div>
-        <div>
-          <p>
-            Ever tried taking two systems level programming courses in the same
-            term?  Or how about saving an entire CS50 lab until the last minute?
-            The term to descrive these situations, in which there is an unrealistic
-            or overly difficult amount of work to be done in a short period of time,
-            is 'getting cooked'.  As a CS major, it is imperative to select your
-            schedule judiciously and use proper time management to avoid getting
-            cooked at all costs.
-          </p>
-        </div>
+      <div class="col-md-8">
+        <p>
+          The only possible thing that makes a CS lab harder is when its
+          due at midnight and it’s 10pm.  Being a CS major and procrastinating
+          is probably a bad combination, like beans and red wine.  Most
+          CS labs are time consuming to say the least, so starting the day
+          they are due is definitely not a good idea.
+        </p>
       </div>
-      <div>
-        <div>
-          <h3>#5: Forgetting How to Code</h3>
-        </div>
-        <div>
-          <p>
-            What's that you say?  How could a programmer possibly forget how to
-            code?  Well you're right, they probably couldn't.  The problem is
-            that we had to make up some content for this tutorial and we
-            ran out of ideas.
-          </p>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>#3: Not Using Git</h3>
+      </div>
+      <div class="col-md-8">
+        <p>
+          As a student, especially if no one else is working on your code,
+          using Git can seem tedious and unneccessary.  Why learn this complicated
+          new system and follow a new workflow?  Well, as anyone who has tried
+          and failed at a major change and forgotten to back up their work knows,
+          using Git correctly can be crucial to success.  Proper Git usage can
+          save invaluable time and is a necessary skill for group work.
+        </p>
       </div>
     </div>
 
-    <footer>
-      <ul>
-        <li><a href="#">ORC</a></li>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>#4: Getting Cooked</h3>
+      </div>
+      <div class="col-md-8">
+        <p>
+          Ever tried taking two systems level programming courses in the same
+          term?  Or how about saving an entire CS50 lab until the last minute?
+          The term to descrive these situations, in which there is an unrealistic
+          or overly difficult amount of work to be done in a short period of time,
+          is 'getting cooked'.  As a CS major, it is imperative to select your
+          schedule judiciously and use proper time management to avoid getting
+          cooked at all costs.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>#5: Forgetting How to Code</h3>
+      </div>
+      <div class="col-md-8">
+        <p>
+          What's that you say?  How could a programmer possibly forget how to
+          code?  Well you're right, they probably couldn't.  The problem is
+          that we had to make up some content for this tutorial and we
+          ran out of ideas.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="languages">
+    <h2>Top Languages to Use</h2>
+    <h3>
+      <ol>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>Ruby</li>
+        <li>Javascript</li>
+        <li>C#</li>
+        <li>PHP</li>
+        <li>Objective-C</li>
+        <li>SQL</li>
+      </ol>
+    </h3>
+  </div>
+
+  <footer class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">ORC</a></li>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Schedule</a></li>
         <li><a href="#">Major</a></li>
         <li><a href="#">Professors</a></li>
       </ul>
-    </footer>
-  </body>
-  </html>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
